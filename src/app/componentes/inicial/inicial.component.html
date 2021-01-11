@@ -1,1 +1,17 @@
-<p>inicial works!</p>
+<div class="container row">
+  <div class="col-2">
+    <span (click)="vista = 'ver'">Ver</span>
+    <br>
+    <br>
+    <br>
+    <span (click)="vista = 'subir'">Sub</span>
+  </div>
+  <div class="col-10 addScroll">
+    <div *ngIf="vista == 'ver'">
+      ver
+    </div>
+    <div *ngIf="vista == 'subir'">
+      subir
+    </div>
+  </div>
+</div>
