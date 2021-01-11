@@ -10,6 +10,8 @@ import { FooterComponent } from './componentes/compartidos/footer/footer.compone
 import { InicialComponent } from './componentes/inicial/inicial.component';
 import { SubirComponent } from './componentes/subir/subir.component';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +25,8 @@ import { SubirComponent } from './componentes/subir/subir.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
