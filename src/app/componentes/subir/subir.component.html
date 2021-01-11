@@ -1,1 +1,9 @@
-<p>subir works!</p>
+<form novalidate [formGroup]="formularioProducto" (ngSubmit)="submitformularioProducto($event)" class="border border-light">
+  <input formControlName="nombre" type="text" class="form-control" placeholder="Nombre">
+  <input formControlName="stock" type="number" class="form-control" placeholder="Stock">
+  <input formControlName="cantidad" type="number" class="form-control" placeholder="Cantidad">
+  <div *ngIf="errorGuardar" class="mt-2">
+    <span class="alert-danger form-control">No se guardó la noticia</span>
+  </div>
+  <button class="gBotonPrincipal px-5 my-3" type="submit">Guardar</button>
+</form>
