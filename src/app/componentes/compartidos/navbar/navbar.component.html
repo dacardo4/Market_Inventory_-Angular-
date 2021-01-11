@@ -1,1 +1,61 @@
-<p>navbar works!</p>
+<nav class="container myFontRegular navbar fixed-top navbar-expand-lg navbar-light bg-light">
+  <div>
+    <img class="navbar-brand" width="100" alt="Vamos Guayabal" src="assets/img/logoBlanco.svg" [routerLink]="['']" />
+  </div>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#mainMenu"
+    aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="mainMenu">
+    <ul class="nav ml-auto mr-3">
+      <li class="nav-item my-auto" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+        <a class="nav-link" [routerLink]="['']" data-toggle="collapse" data-target="#mainMenu">Inicio</a>
+      </li>
+      <li class="nav-item dropdown my-auto" >
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nosotros</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+            <a class="nav-link" [routerLink]="['Nosotros/Reseña']" data-toggle="collapse" data-target="#mainMenu">Reseña</a>
+          </li>
+          <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+            <a class="nav-link" [routerLink]="['Nosotros/Secretaria-de-Gobierno']" data-toggle="collapse" data-target="#mainMenu">Secretaría de Gobierno</a>
+          </li>
+          <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+            <a class="nav-link" [routerLink]="['Nosotros/Secretaria-de-Hacienda']" data-toggle="collapse" data-target="#mainMenu">Secretaría de Hacienda</a>
+          </li>
+          <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+            <a class="nav-link" [routerLink]="['Nosotros/Secretaria-de-Planeacion']" data-toggle="collapse" data-target="#mainMenu">Secretaría de Planeación</a>
+          </li>
+          <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+            <a class="nav-link" [routerLink]="['Nosotros/Oficina-de-Servicios-Publicos']" data-toggle="collapse" data-target="#mainMenu">Oficina de Servicios Públicos</a>
+          </li>
+          <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+            <a class="nav-link" [routerLink]="['Nosotros/Coordinacion-Social']" data-toggle="collapse" data-target="#mainMenu">Coordinacion Social</a>
+          </li>
+          <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+            <a class="nav-link" [routerLink]="['Nosotros/Coordinación-de-Maquinaria']" data-toggle="collapse" data-target="#mainMenu">Coordinación de Maquinaria</a>
+          </li>
+          <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+            <a class="nav-link" [routerLink]="['Nosotros/UEATAA']" data-toggle="collapse" data-target="#mainMenu">UEATAA</a>
+          </li>
+          <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+            <a class="nav-link" [routerLink]="['Nosotros/Oficina-de-Prensa-y-Protocolo']" data-toggle="collapse" data-target="#mainMenu">Oficina de Prensa y Protocolo</a>
+          </li>
+        </div>
+      </li>
+      <li class="nav-item my-auto" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+        <a class="nav-link myFontCondensed gAtencion" [routerLink]="['Comercio']" data-toggle="collapse" data-target="#mainMenu">NUESTRA OFERTA</a>
+      </li>
+      <li class="nav-item my-auto" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+        <a class="nav-link" [routerLink]="['Emprendedor']" data-toggle="collapse" data-target="#mainMenu">Idea Joven</a>
+      </li>
+      <li class="nav-item my-auto" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+        <a class="nav-link" [routerLink]="['Noticias']" data-toggle="collapse" data-target="#mainMenu">Noticias</a>
+      </li>
+      <li class="nav-item my-auto" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+        <a class="nav-link" [routerLink]="['Contacto']" data-toggle="collapse" data-target="#mainMenu">Haz parte!</a>
+      </li>
+    </ul>
+  </div>
+</nav>
