@@ -26,7 +26,7 @@ export class ListaComponent implements OnInit {
   getProductos(): void {
     this._productoService.getProducto().pipe(take(1)).subscribe(
       data => {
-        console.log(data);
+        // console.log(data);
         this.allProductos = data;
       }, error => {
         console.log('getProductos Error: ',error);
@@ -37,7 +37,7 @@ export class ListaComponent implements OnInit {
   getCantidades(): void {
     this._cantidadService.getCantidad().pipe(take(1)).subscribe(
       data => {
-        console.log(data);
+        // console.log(data);
         this.allCantidades = data;
       }, error => {
         console.log('getProductos Error: ',error);
@@ -47,9 +47,9 @@ export class ListaComponent implements OnInit {
 
   nombreProducto(idProducto: number): string {
     let nombre = '';
-    console.log(idProducto);
-    nombre = this.allProductos[idProducto]['productName'];
-    console.log(nombre);
+    // console.log(idProducto);
+    nombre = this.allProductos[idProducto]['productName']? this.allProductos[idProducto]['productName'] : 'NN' ;
+    // console.log(nombre);
     return nombre;
   }
 }
