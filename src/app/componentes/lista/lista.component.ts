@@ -47,8 +47,11 @@ export class ListaComponent implements OnInit {
 
   nombreProducto(idProducto: number): string {
     let nombre = '';
+    // console.log('-----------------------------');
     // console.log(idProducto);
-    nombre = this.allProductos[idProducto]['productName']? this.allProductos[idProducto]['productName'] : 'NN' ;
+    let obj = this.allProductos.find(p => p.id == idProducto);
+    // console.log(obj);
+    nombre = obj['productName']? obj['productName'] : 'NN' ;
     // console.log(nombre);
     return nombre;
   }
