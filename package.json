@@ -11,10 +11,6 @@
     "lite": "lite-server",
     "postinstall": "ng build --prod"
   },
-  "engines": {
-    "node": "10.14.2",
-    "npm": "6.4.1"
-  },
   "private": true,
   "dependencies": {
     "@angular-devkit/build-angular": "~0.1002.4",
