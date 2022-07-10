@@ -11,9 +11,6 @@
     "lite": "lite-server",
     "postinstall": "ng build --configuration production"
   },
-  "engines": {
-    "npm": "6.11.0"
-  },
   "private": true,
   "dependencies": {
     "@angular-devkit/build-angular": "^14.0.5",
