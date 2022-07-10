@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { take } from 'rxjs/operators';
 import { CantidadService } from 'src/app/servicios/cantidad.service';
 import { ProductoService } from 'src/app/servicios/producto.service';
@@ -11,11 +11,11 @@ import { ProductoService } from 'src/app/servicios/producto.service';
 })
 export class SubirComponent implements OnInit {
 
-  formularioProducto: FormGroup;
+  formularioProducto: UntypedFormGroup;
   errorGuardar: boolean = false;
 
   constructor(
-    private _formBuilder: FormBuilder,
+    private _formBuilder: UntypedFormBuilder,
     private _productoService: ProductoService,
     private _cantidadService: CantidadService,
   ) {
